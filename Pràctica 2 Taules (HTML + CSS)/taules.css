@@ -7,16 +7,17 @@ caption {
     color: blue;
     text-align: center;
 }
-tr:first-child {
+th {
     background-color: grey;
     text-align: center;
     font-weight: bold;
-}
-table, th {
     border: 1px solid black;
-    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
 }
 table {
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
 }
