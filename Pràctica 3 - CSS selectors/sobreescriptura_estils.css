@@ -1,0 +1,54 @@
+/*1. color general de la lletra negra*/
+.paragraf1 {
+    color: black;
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+h1 {
+    background-color: white;
+    color: grey;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+strong {
+    color: green !important;
+    text-decoration: underline;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 a {
+    font-style: italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+h3 + div + footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?
+1. Quins elements passen a veure’s diferent i quins es continuen veient tal com tu havies definit? Per què?
+- Els strong es veuen diferent perquè se sobreescriu el color a signat per estils_inicials.css.
+- Tots els altres canvis es conserven perquè en estils_inicials.css no se sobreescriu cap paràmetre.
+
+2. Com ho faries perquè tots els elements es continuïn veient tal com es veia abans d’invertir l’ordre de càrrega? Proposa un codi CSS.
+Per aquesta part hem d'aprendre com funcionen les prioritats en CSS, la prioritat funciona de la següent manera, si especifiquem més la ruta i té més prioritat.---------------------------------------------------------------------------------
+Per exemple:
+strong = 1 punt de prioritat
+p.paragraf1 strong = 11 punts de prioritat (1 punt --> strong + 10 punts --> p.paragraf1)
+Font: https://www.w3schools.com/css/css_specificity.asp
+
+També he vist que es pot utilitzar el !important.
+---------------------------------------------------------------------------------
+
+Codi proposat:
+---------------------------------------------------------------------------------
+p.paragraf1 strong {
+    color: green;
+    text-decoration: underline;
+}
+p.paragraf2 strong {
+    color: green;
+    text-decoration: underline;
+}
+*/
