@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Formulari</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="formulari_i_enviat.css">
+    </head>
+    <body>
+        <form action="formulari_enviat.html">
+            <label for="textcurt">Texto:</label><br>
+            <input type="text" id="textcurt" class="textboxcolor" name="textcurt" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" class="textboxcolor" name="Correo electrónico" required><br><br>
+
+            <label for="number">Número:</label><br>
+            <input type="number" id="number" class="textboxcolor" name="Número" required><br><br>
+            <label for="yo">Datos:</label><br>
+            <select name="yo" id="yo" required>
+                <option value="nombre">Jairo Vigil</option>
+                <option value="dni">18393223J</option>
+                <option value="fecha">10/12/2002</option>
+            </select><br><br>
+
+            <label for="Noticia1">Que noticies has mirat?</label><br>
+            <input type="checkbox" id="noticia1" name="Noticia1" value="Noticia1" checked>
+            <label for="noticia1"> Noticia 1</label><br>
+            <input type="checkbox" id="noticia1" name="Noticia2" value="Noticia2">
+            <label for="noticia2"> Noticia 2</label><br>
+            <input type="checkbox" id="noticia1" name="Noticia3" value="Noticia3">
+            <label for="noticia3"> Noticia 3</label><br><br>
+
+            <label for="noticia1_fav">Qual t'agrada mes?</label><br>
+            <input type="radio" id="noticia1_fav" name="Noticia1" value="Noticia1" checked>
+            <label for="html"> Noticia 1</label><br>
+            <input type="radio" id="noticia1_fav" name="Noticia1" value="Noticia2">
+            <label for="css"> Noticia 2</label><br>
+            <input type="radio" id="noticia1_fav" name="Noticia1" value="Noticia3">
+            <label for="javascript"> Noticia 3</label><br><br>
+
+            <h3>Tens alguna sugerencia?</h3>
+            <textarea name="Sugerencia" id="sugerencia" class="textboxcolor" cols="30" rows="10" placeholder="Introdueix un text per sugerir algun canvi." required></textarea><br>
+            <input type="submit" class="boton" value="Enviar formulari">
+        </form>
+    </body>
+</html>

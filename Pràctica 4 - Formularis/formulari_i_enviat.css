@@ -1,0 +1,21 @@
+#number {
+    width: 100px;
+}
+.boton {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+}
+.boton:hover {
+    background-color: blue;
+}
+.textboxcolor:focus {
+    background-color: aqua;
+}
+body {
+    background-color: silver;
+    font-style: inherit;
+}
+.textboxcolor {
+    width: 300px;
+}
